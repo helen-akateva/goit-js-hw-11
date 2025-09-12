@@ -70,14 +70,7 @@ li.gallery-item {
   width: 360px;
   height: 200px;
   object-fit: cover;
-  transition: all 0.3s ease;
   cursor: pointer;
-}
-
-.gallery img:hover {
-  width: 376px;
-  height: 208px;
-  transform: translateZ(0);
 }
 
 .card-list {
