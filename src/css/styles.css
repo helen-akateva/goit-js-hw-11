@@ -1,0 +1,33 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+
+.loader {
+    font-size: 48px;
+    color: transparent;
+    overflow: hidden;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 #4E75FF, 5em 0 #4E75FF;
+    animation: marquee 2s infinite ease;
+}
+
+.loader:before {
+    content: "Loading...";
+}
+
+@keyframes marquee {
+    to {
+        text-shadow: -5em 0 #4E75FF, 0 0 #4E75FF
+    }
+}
+
+.is-hidden {
+    display: none;
+}
